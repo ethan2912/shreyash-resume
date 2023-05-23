@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESUME</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/914700a9b6.js" crossorigin="anonymous"></script> 
+</script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script 
+    type="text/javascript" src="/Users/shreyash/Desktop/RESUME /cloudRound.js">
+</script>
+<style>
+    /* Mother effin brute force CSS reset... */
+    /* Always include after any other CSS */
+* {
+    resize: none;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+}
+</style>
+
+
+
+</head>
+<body >
+  <div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo" > 
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times"  onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p class="topText">shreyash patil</p>
+            <h1>Hi, I'm </h1><span class = "myname"></h1>
+             
+        </div>
+    </div>
+  </div>  
+
+  <h1 class = "sub-title">My Skills</h1>
+  <div id="cloud">
+  <script src="./cloud.js"></script>
+  <script>
+    $(document).ready(function () {
+      const entries = [
+        { label: "HTML" },
+        { label: "Android Studio" },
+        { label: "git" },
+        { label: "github" },
+        {
+          label: "Flutter",
+        },
+        {
+          label: "firebase",
+        },
+        {
+          label: "Adobe Illustrator",
+        },
+        {
+          label: "Da vinchi resolve",
+        },
+        {
+          label: "Power Point",
+        },
+        {
+          label: "IOT",
+        },
+        {
+          label: "CSS",
+        },
+        {
+          label: "JavaScript",
+        },
+        {
+          label: "Java",
+        },
+        {
+          label: "Figma",
+        },
+        {
+          label: "Python",
+        },
+        {
+          label: "MySQL",
+        },
+      ];
+      const settings = {
+        entries: entries,
+        width: "100%",
+        height: 480,
+        radius: "65%",
+        radiusMin: 50,
+        bgDraw: true,
+        bgColor: "#101314",
+        opacityOver: 1.0,
+        opacityOut: 0.05,
+        opacitySpeed: 6,
+        fov: 800,
+        speed: 1,
+        fontFamily: "Poppins, sans-serif",
+        fontSize: "20",
+        fontColor: "#F8401B",
+        fontWeight: "bold",
+        fontStyle: "normal",
+        fontSretch: "normal",
+        fontToUpperCase: true,
+      };
+      $("#tag").svg3DTagCloud(settings);
+    });
+    </script></div>
+ <div id="tag"></div>
+ 
+  <!--------------------------about-------------------------------->
+  <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/DSC_2794-01-01.jpeg" class="aboutMeImg">
+            </div>
+            <div class="about-col-2">
+                <h1 class = "sub-title">About Me</h1>
+                <p>Hello, my name is <h2>Shreyash Sukumar Patil.</h2> I am currently pursuing a third-year degree in Computer Science at Rajarambapu Institute of Technology. My passion lies in the fields of development and design, which I have honed through my personal endeavors. I am also proud to offer a range of services, which can be found on this website. My projects reflect the proficiency of my skills and serve as a testament to my commitment to delivering high-quality outcomes..</p>
+            <div class="tab-titles">
+                <p class="tab-links active-link "onclick = "opentab('skills')">Skills</p>
+                <p class="tab-links"onclick = "opentab('experiance')">Experiance</p>
+                <p class="tab-links"onclick = "opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id = "skills">
+                <ul>
+                    <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                    <li><span>Application Development</span><br>Android Studio, Flutter</li>
+                    <li><span>Web Development </span><br>HTML, CSS, JavaScript</li>
+                    <li><span>Graphic Designing</span><br> Adobe Illustrator</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="experiance">
+                <ul>
+                    <li><span>06/2021- 12/2022</span><br>Media Designer | Bubble Bite Private Ventures Pvt. Ltd.</li>
+                    <li><span>2021-2022</span><br>Magazine Head | Computer Science Engineering Student Association, RIT</li>
+                    <li><span>2022-2023 </span><br>WEB DESIGNER | RIT HACKATHON</li>
+                    
+                </ul>
+            </div>
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>2018</span><br>10th | Chinchwad Highschool Chinchwad</li>
+                    <li><span>2020</span><br>12th | Vyankatrao Highschool And Junior College </li>
+                    <li><span>Current </span><br>Btech in computer Engineering | Rajarambapu Institute of Technology </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+  </div> 
+</div>  
+
+<!--------------------------------Services---------------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class = "sub-title">My services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i> 
+                    <h2>Web Development</h2>
+                    <p>
+                        In my experience, web development has been the most effective path for enhancing my skills in front-end development. By working on various web-based projects, I have been able to expand my skillset and engage in innovative and creative problem-solving, which has enabled me to think outside the box.</p>
+                       
+                </div>
+                <div>
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    <h2>Application Development</h2>
+                    <p>As a passionate developer, I have created mobile applications utilizing both the Android Studio and Flutter platforms. These applications have proven to be invaluable in improving my technical skills, particularly in the areas of UI/UX design and programming.</p>
+                       
+                </div>
+                <div>
+                    <i class="fa-sharp fa-solid fa-crop"></i>
+                    <h2>UI/UX Designing</h2>
+                    <p>As a media designer, my professional journey has provided me with invaluable insights into the world of designing, particularly in the realms of software and web development. Through my experience working with prominent clients at Bubble Bite Private Ventures, I have honed my skills using cutting-edge design tools such as Figma and Adobe Illustrator, enabling me to deliver exceptional outcomes for each project. This experience has not only expanded my knowledge but also strengthened my passion for the art of designing.</p>
+                       
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!------------------------------------portfolio-------------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class = "sub-title">My work</h1>
+            <div class="work-list">
+                <div class="work">
+                   <img src="images/work_1.jpg" >
+                   <div>
+                    <div class="layer">
+                        <h3>
+                            Apps
+                        </h3>
+                        <p>
+                            Built a game on top of Java, Figma, and Firebase with the help of Android Studio it has two types of play i.e. a simple Tic Tac Toe and a multiplayer tic tac toe where you can play with Friends.
+                        </p>
+                        <a href="https://github.com/ethan2912/Tic-Tac-Toe"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                   </div>
+                </div>
+                <div class="work">
+                     <img src="images/work_ 2.jpg" >
+                     <div class="layer">
+                        <h3>
+                            Websites
+                        </h3>
+                        <p>
+                            As a web designer, I contributed to developing and designing the official website of RIT-HACKATHON, another example of my excellent development and design skills.
+                        </p>
+                        <a href="http://rithackathon.ritindia.edu/"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/woek_3.jpg" >
+                    <div class="layer">
+                        <h3>
+                            User interfaces 
+                        </h3>
+                        <p>
+                            I created user interfaces of apps like Health app, Blood Bank Management which are excellent in design this interfaces are created with the help of Figma Tool .
+                        </p>
+                        <a href="https://drive.google.com/drive/folders/1xZdcrJ0Fmj2HTz92qwWpQn-VEPJlL4vL?usp=sharing"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+               
+            </div>
+            <a href="https://www.linkedin.com/in/shreyash-patil-3840371bb/" class="btn">See More</a>
+        </div>
+    </div>
+
+
+    <!------------------------------------Contact-------------------------->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> shreyashpatil2912@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i> +91 9130553806</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/shreyash-patil-3840371bb/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/ethan2912"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://stackoverflow.com/users/21650876/shreyash-patil"><i class="fa-brands fa-stack-overflow"></i></a>
+                    </div>
+                    <a href="images/shreyash patil.pdf" download class="btn btn2">Download CV</a>
+        
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet" >
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id ="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright Shreyash. Made for portfolio purpose </p>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbx-Lq6k83UAZpGvvxOuvBA0ATvYvjPtT7R_QVgcLzEsLoeIusuKa4d6EsU7Jd1lBKp-/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent succefully"
+                setTimeout(function(){
+                    msg.innerHTML =""
+                },5000 )
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+      <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+      <script>
+        var typingEffect = new Typed(".myname",{
+            strings : ["SHREYASH","DESIGNER","DEVELOPER"],
+            loop : true,
+            typeSpeed : 100,
+            backSpeed :80,
+            backDelay : 1500
+        })
+      </script>
+      
+   
+
+      
+</body>
+
+</html>
